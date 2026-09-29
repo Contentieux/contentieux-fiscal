@@ -126,7 +126,7 @@ with tab_audit:
                 # Utilisation du modèle Llama 3
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.3-70b-versatile", 
+                    model="mixtral-8x7b-32768", 
                     response_format={"type": "json_object"}
                 )
                 
