@@ -121,7 +121,7 @@ with tab_audit:
 
             try:
                 # Votre clé est intégrée proprement ici
-                client = Groq(api_key="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")
+                client = Groq(api_key=st.secrets["GROQ_API_KEY"])
                 
                 # Utilisation du modèle Llama 3
                 chat_completion = client.chat.completions.create(
