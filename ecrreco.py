@@ -126,7 +126,7 @@ with tab_audit:
                 # Utilisation du modèle Llama 3
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="mixtral-8x7b-32768", 
+                    model="openai/gpt-oss-120b", 
                     response_format={"type": "json_object"}
                 )
                 
